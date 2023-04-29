@@ -1,39 +1,45 @@
 // Calculator.js
-function CalcDesign() {
+import { useState } from 'react';
+import calculate from '../logic/calculate';
+import operate from '../logic/operate';
+
+function Calculator() {
+
+
   return (
     <div className="calculator">
-      <div className="result">0</div>
+      <div className="result">{calculation.next || calculation.total || '0'}</div>
       <div className="column">
-        <input type="button" value="AC" className="button" />
-        <input type="button" value="+/-" className="button" />
-        <input type="button" value="%" className="button" />
-        <input type="button" value="/" className="button operation" />
+        <button type="button" className="button" onClick={() => handleClick('AC')}>AC</button>
+        <button type="button" className="button" onClick={() => handleClick('+/-')}>+/-</button>
+        <button type="button" className="button" onClick={() => handleClick('%')}>%</button>
+        <button type="button" className="button operation" onClick={() => handleClick('÷')}>÷</button>
       </div>
       <div className="column">
-        <input type="button" value="7" className="button" />
-        <input type="button" value="8" className="button" />
-        <input type="button" value="9" className="button" />
-        <input type="button" value="x" className="button operation" />
+        <button type="button" className="button" onClick={() => handleClick('7')}>7</button>
+        <button type="button" className="button" onClick={() => handleClick('8')}>8</button>
+        <button type="button" className="button" onClick={() => handleClick('9')}>9</button>
+        <button type="button" className="button operation" onClick={() => handleClick('x')}>x</button>
       </div>
       <div className="column">
-        <input type="button" value="4" className="button" />
-        <input type="button" value="5" className="button" />
-        <input type="button" value="6" className="button" />
-        <input type="button" value="-" className="button operation" />
+        <button type="button" className="button" onClick={() => handleClick('4')}>4</button>
+        <button type="button" className="button" onClick={() => handleClick('5')}>5</button>
+        <button type="button" className="button" onClick={() => handleClick('6')}>6</button>
+        <button type="button" className="button operation" onClick={() => handleClick('-')}>-</button>
       </div>
       <div className="column">
-        <input type="button" value="1" className="button" />
-        <input type="button" value="2" className="button" />
-        <input type="button" value="3" className="button" />
-        <input type="button" value="+" className="button operation" />
+        <button type="button" className="button" onClick={() => handleClick('1')}>1</button>
+        <button type="button" className="button" onClick={() => handleClick('2')}>2</button>
+        <button type="button" className="button" onClick={() => handleClick('3')}>3</button>
+        <button type="button" className="button operation" onClick={() => handleClick('+')}>+</button>
       </div>
       <div className="column">
-        <input type="button" value="0" className="button zero" />
-        <input type="button" value="." className="button" />
-        <input type="button" value="=" className="button operation" />
+        <button type="button" className="button zero" onClick={() => handleClick('0')}>0</button>
+        <button type="button" className="button decimal" onClick={() => handleClick('.')}>.</button>
+        <button type="button" className="button operation" onClick={handleEqual}>=</button>
       </div>
     </div>
   );
 }
 
-export default CalcDesign;
+export default Calculator;
