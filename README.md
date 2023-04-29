@@ -57,6 +57,12 @@
 - Step 3: Once you have cloned this repo navigate to the folder that contains
   the repository.
 - Step 4: If you want to edit this project open it with your favorite text editor.
+- Step 5: Run these commands in order to execute npm commands
+  ```
+  npm install
+  npm start
+  npm run build
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
