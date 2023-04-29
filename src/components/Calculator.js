@@ -4,7 +4,20 @@ import calculate from '../logic/calculate';
 import operate from '../logic/operate';
 
 function Calculator() {
+  const [calculation, setCalculation] = useState({ total: null, next: null, operation: null });
 
+  const handleClick = (buttonName) => {
+    const result = calculate(calculation, buttonName);
+    setCalculation(result);
+  };
+
+  const handleEqual = () => {
+    const { total, next, operation } = calculation;
+    if (total && next && operation) {
+      const result = operate(total, next, operation);
+      setCalculation({ total: result, next: null, operation: null });
+    }
+  };
 
   return (
     <div className="calculator">
