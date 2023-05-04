@@ -1,4 +1,3 @@
-// Calculator.js
 import { useState } from 'react';
 import calculate from '../logic/calculate';
 import operate from '../logic/operate';
