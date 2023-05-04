@@ -4,6 +4,7 @@
   margin: 20px auto;
   display: flex;
   flex-direction: column;
+  font-size: 28px;
 }
 
 .result {
@@ -24,6 +25,7 @@
 .button {
   width: 25%;
   height: 100%;
+  font-size: 28px;
 }
 
 .operation {

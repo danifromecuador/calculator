@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import calculate from '../logic/calculate';
 import operate from '../logic/operate';
+import Button from './Button';
 
 function Calculator() {
   const [calculation, setCalculation] = useState({ total: null, next: null, operation: null });
@@ -23,10 +24,12 @@ function Calculator() {
     <div className="calculator">
       <div className="result">{calculation.next || calculation.total || '0'}</div>
       <div className="column">
-        <button type="button" className="button" onClick={() => handleClick('AC')}>AC</button>
+        <Button value="dani" />
+        {/* <button type="button" className="button" onClick={() => handleClick('AC')}>AC</button>
         <button type="button" className="button" onClick={() => handleClick('+/-')}>+/-</button>
         <button type="button" className="button" onClick={() => handleClick('%')}>%</button>
-        <button type="button" className="button operation" onClick={() => handleClick('÷')}>÷</button>
+        <button type="button" className="button operation" onClick={() => handleClick('÷')}>
+        ÷</button> */}
       </div>
       <div className="column">
         <button type="button" className="button" onClick={() => handleClick('7')}>7</button>
