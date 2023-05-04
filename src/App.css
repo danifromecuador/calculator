@@ -20,12 +20,17 @@
 
 .column {
   height: 16%;
+  display: flex;
 }
 
 .button {
-  width: 25%;
+  width: 120px;
   height: 100%;
   font-size: 28px;
+}
+
+.button.zero {
+  width: 240px;
 }
 
 .operation {

@@ -24,35 +24,33 @@ function Calculator() {
     <div className="calculator">
       <div className="result">{calculation.next || calculation.total || '0'}</div>
       <div className="column">
-        <Button value="dani" />
-        {/* <button type="button" className="button" onClick={() => handleClick('AC')}>AC</button>
-        <button type="button" className="button" onClick={() => handleClick('+/-')}>+/-</button>
-        <button type="button" className="button" onClick={() => handleClick('%')}>%</button>
-        <button type="button" className="button operation" onClick={() => handleClick('÷')}>
-        ÷</button> */}
+        <Button character="AC" className="button" fn={handleClick} />
+        <Button character="+/-" className="button" fn={handleClick} />
+        <Button character="%" className="button" fn={handleClick} />
+        <Button character="÷" className="button operation" fn={handleClick} />
       </div>
       <div className="column">
-        <button type="button" className="button" onClick={() => handleClick('7')}>7</button>
-        <button type="button" className="button" onClick={() => handleClick('8')}>8</button>
-        <button type="button" className="button" onClick={() => handleClick('9')}>9</button>
-        <button type="button" className="button operation" onClick={() => handleClick('x')}>x</button>
+        <Button character="7" className="button" fn={handleClick} />
+        <Button character="8" className="button" fn={handleClick} />
+        <Button character="9" className="button" fn={handleClick} />
+        <Button character="x" className="button operation" fn={handleClick} />
       </div>
       <div className="column">
-        <button type="button" className="button" onClick={() => handleClick('4')}>4</button>
-        <button type="button" className="button" onClick={() => handleClick('5')}>5</button>
-        <button type="button" className="button" onClick={() => handleClick('6')}>6</button>
-        <button type="button" className="button operation" onClick={() => handleClick('-')}>-</button>
+        <Button character="4" className="button" fn={handleClick} />
+        <Button character="5" className="button" fn={handleClick} />
+        <Button character="6" className="button" fn={handleClick} />
+        <Button character="-" className="button operation" fn={handleClick} />
       </div>
       <div className="column">
-        <button type="button" className="button" onClick={() => handleClick('1')}>1</button>
-        <button type="button" className="button" onClick={() => handleClick('2')}>2</button>
-        <button type="button" className="button" onClick={() => handleClick('3')}>3</button>
-        <button type="button" className="button operation" onClick={() => handleClick('+')}>+</button>
+        <Button character="1" className="button" fn={handleClick} />
+        <Button character="2" className="button" fn={handleClick} />
+        <Button character="3" className="button" fn={handleClick} />
+        <Button character="+" className="button operation" fn={handleClick} />
       </div>
       <div className="column">
-        <button type="button" className="button zero" onClick={() => handleClick('0')}>0</button>
-        <button type="button" className="button decimal" onClick={() => handleClick('.')}>.</button>
-        <button type="button" className="button operation" onClick={handleEqual}>=</button>
+        <Button character="0" className="button zero" fn={handleClick} />
+        <Button character="." className="button decimal" fn={handleClick} />
+        <Button character="=" className="button operation" fn={handleEqual} />
       </div>
     </div>
   );
