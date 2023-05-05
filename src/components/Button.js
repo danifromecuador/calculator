@@ -15,7 +15,7 @@ export default function Button({ character, className, fn }) {
   );
 }
 
-Button.propTypes = {
+Button.PropTypes = {
   character: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
   fn: PropTypes.func.isRequired,
