@@ -4,6 +4,7 @@
   margin: 20px auto;
   display: flex;
   flex-direction: column;
+  font-size: 28px;
 }
 
 .result {
@@ -19,11 +20,17 @@
 
 .column {
   height: 16%;
+  display: flex;
 }
 
 .button {
-  width: 25%;
+  width: 120px;
   height: 100%;
+  font-size: 28px;
+}
+
+.button.zero {
+  width: 240px;
 }
 
 .operation {
