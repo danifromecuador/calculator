@@ -42,7 +42,8 @@
 }
 
 .quoteContainer {
-  border: 1px solid red;
+  border: 1px solid gray;
+  padding: 1rem;
   width: 480px;
   margin: 20px auto;
 }

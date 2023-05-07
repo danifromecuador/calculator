@@ -13,7 +13,6 @@ function Quote() {
       },
     });
     const data = await response.json();
-    console.log(data);
     const { quote, author, category } = data[0];
     setQuote(quote);
     setAuthor(author);
