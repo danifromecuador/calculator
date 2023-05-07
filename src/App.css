@@ -40,3 +40,16 @@
 .zero {
   width: 50%;
 }
+
+.quoteContainer {
+  border: 1px solid gray;
+  padding: 1rem;
+  width: 480px;
+  margin: 20px auto;
+}
+
+.loadingMessage,
+.errorMessage {
+  width: 480px;
+  margin: 0 auto;
+}
