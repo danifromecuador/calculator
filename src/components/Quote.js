@@ -23,7 +23,7 @@ function Quote() {
 
   useEffect(() => {
     fetchQuote();
-  }, []);
+  }, [setLoading, setQuote]);
 
   if (loading === 'not loading') {
     return (
