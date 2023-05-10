@@ -1,0 +1,33 @@
+* {
+  font-family:'Courier New', Courier, monospace
+}
+
+.NavBarContainer {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.NavBar {
+  display: flex;
+  column-gap: 10px;
+  /* align-items: center; */
+
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+hr {
+  border: 1px solid black;
+}
