@@ -1,4 +1,3 @@
-// App.js
 import './App.css';
 import Calculator from './components/Calculator';
 import Quote from './components/Quote';
