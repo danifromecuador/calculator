@@ -1,5 +1,5 @@
 * {
-  font-family:'Courier New', Courier, monospace
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .NavBarContainer {
@@ -17,8 +17,8 @@ h1 {
 .NavBar {
   display: flex;
   column-gap: 10px;
-  /* align-items: center; */
 
+  /* align-items: center; */
 }
 
 li {
