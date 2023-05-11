@@ -1,15 +1,38 @@
 import './App.css';
+import {
+  BrowserRouter, Routes, Route, Link, Outlet,
+} from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Quote from './components/Quote';
-import NavBar from './components/NavBar';
+import './stylesheets/NavBar.css';
+import Home from './components/Home';
+
+const Layout = () => (
+  <div>
+    <div className="NavBarContainer">
+      <h1>Math Magicians</h1>
+      <nav className="NavBar ul">
+        <Link to="/" className="li">Home</Link>
+        <Link to="/calculator" className="li">Calculator</Link>
+        <Link to="/quotes" className="li">Quotes</Link>
+      </nav>
+    </div>
+    <Outlet />
+  </div>
+);
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Calculator />
-      <Quote />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="calculator" element={<Calculator />} />
+          <Route path="quotes" element={<Quote />} />
+        </Route>
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 
