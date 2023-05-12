@@ -4,10 +4,12 @@
 
 .NavBarContainer {
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  background-color: rgb(220, 139, 118);
+  border-radius: 25px;
 }
 
 h1 {
@@ -16,16 +18,16 @@ h1 {
 
 .NavBar {
   display: flex;
-  column-gap: 10px;
-
-  /* align-items: center; */
+  column-gap: 30px;
 }
 
-li {
+.li {
   list-style: none;
   display: flex;
   align-items: center;
-  font-size: 22px;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 hr {
