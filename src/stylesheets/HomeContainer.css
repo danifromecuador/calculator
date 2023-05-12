@@ -1,0 +1,15 @@
+.homeContainer {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  padding: 10px;
+}
+
+p {
+  font-size: 18px;
+  padding: 10px;
+}
